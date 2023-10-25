@@ -1,133 +1,159 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width-device, initial-scale=1.0">
-	<title> Personal page </title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="shorcut icon" href="img/profile1.png">
-	<link rel="stylesheet" type="text/css"
-		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;1,500&family=Rubik:ital,wght@0,300;1,300;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <div class="navbar" id="navbar">
+        <div class="judul">
+            <h1>Ariya Putra</h1>
+            <p>Student</p>
+        </div>
+        <img src="img/18. Ariya.jpg" alt="">
+        <div class="navbar-menu">
+            <ul>
+                <i class="fa fa-home"></i>
+                <li><a href="">HOME</a></li>
+                <i class="fa fa-user"></i>
+                <li><a href="#about">ABOUT</a></li>
+                <i class="fa fa-user"></i>
+                <li><a href="#skill">SKILL</a></li>
+                <i class="fa fa-picture-o"></i>
+                <li><a href="#project">PROJECT</a></li>
+                <i class="fa fa-phone"></i>
+                <li><a href="#contact">CONTACT </a></li>
+            </ul>
+        </div>
+        <div class="navbar-menu-mobile">
+            <ul>
+                <li><a href="#">
+                    <i class="fa fa-home"></i>
+                </a></li>
+                <li><a href="#about"><i class="fa fa-user"></i></a></li>
+                <li><a href="#skill"><i class="fa fa-cog"></i></a></li>
+                <li><a href="#project"><i class="fa fa-file"></i></a></li>
+                <li><a href="#contact"><i class="fa fa-phone"></i></a></li>
+            </ul>
+        </div>
+        <div></div>
+    </div>
 
-	<div class="container">
+    <div class="header">
+        <div class="header-text">
+            <h1>Hi! 👋 Im <span>Ariya Putra</span></h1>
+            <p>
+                I am a student from Indonesia who is starting to focus on web development and is interested in becoming a front end web developer</p>
+            <div class="btn">
+                <a href="https://www.instagram.com/mdeariya_/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/i.m.putra.3576?mibextid=ZbWKwL"><i class="fa fa-facebook"></i></a>
+                <a href="mailto:madeariya28@gmail.com"><i class="fa fa-envelope-open"></i></a>
+            </div>
+        </div>
+        <img src="img/18. Ariya.jpg" alt="">
+    </div>
 
-		<!-- Bagian logo -->
-		<div class="logo">
-			<img src="img/logo.png" alt="">
-		</div>
-		<!-- Akhir logo -->
+    <div class="about" id="about">
+        <div class="about-me">
+            <h1>ABOUT</h1>
+            <h1>About me</h1>
+            <p>Perkenalkan nama saya I Made Ariya Putra saya lahir di denpasar 21 Februari 2008, saya bersekolah di SMK
+                Negeri 1 Denpasar dengan jurusan RPL alasan saya mengambil jurusan ini karena ingin belajar coding. Saya berumur 15 tahun saya tinggal di Jl. Pralina Gg. Sinom No. 3</p>
+        </div>
+        <div class="information">
+            <h1>Basic Information</h1>
+            <p>Age : 15</p>
+            <p>Email : madeariya28@gmail.com</p>
+            <p>Addres : Jl. Pralina Gg. Sinom No. 3</p>
+        </div>
+        <img src="img/about-img.svg" alt="">
+    </div>
 
-		<!-- Header -->
-		<header class="judul">
-			<h1 class="atas" id="name"></h1>
-			<p id="note">Sedang mendalami front end web developer</p>
-		</header>
-		<!-- Akhir header -->
+    <div class="skill" id="skill">
+        <img src="img/skill.svg" alt="">
+        <div class="skill-me">
+            <h1>My Skill</h1>
+            <p>Skill saya pada programming yaitu Html, Css, Tailwind CSS, Bootstrap. </p>
+            <i class="fa fa-html5"></i>
+            <i class="fa fa-css3"></i>
+        </div>
+    </div>
 
-		<!-- Awal tombol -->
-		<div id="tombol">
-			<a href="#about-me">About Me</a>
-		</div>
+    <!-- data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="1000" -->
 
-		<div id="tombol2">
-			<a href="#project">My Project</a>
-		</div>
-		<!-- Akhir tombol -->
+    <div class="project" id="project" >
+        <h1>My Project</h1>
+        <div class="card-project">
+            <div class="project-item">
+                <a href=""><img src="img/project1.png" alt=""></a>
+                <h2>E-Kasir</h2>
+                <p>Website kasir yang menyediakan fitur selayaknya kasir pada dunia nyata. Website ini dibuat dengan
+                    template AdminLTE dan php. </p>
+            </div>
+            <div class="project-item">
+                <a href=""><img src="img/project2.png" alt=""></a>
+                <h2>Rak Pakaian</h2>
+                <p>Website yang dibuat mirip dengan toko online yang bertema pakaian, website ini dibuat dengan vanilla
+                    html dan css saja. Web ini masih static.</p>
+            </div>
+            <div class="project-item">
+                <a href=""><img src="img/project3.png" alt=""></a>
+                <h2>Portfolio</h2>
+                <p>Website portofolio yang berisi tentang saya, skill, sosial media dan project. website ini dibuat
+                    dengan vanilla html dan css dengan AOS.</p>
+            </div>
+            <div class="project-item">
+                <a href=""><img src="img/project4.png" alt=""></a>
+                <h2>Linktree</h2>
+                <p>Website ini dibuat dengan konsep linktree yang memiliki kotak kotak link, website ini dibuat dengan
+                    vanilla html dan css saja tanpa framework</p>
+            </div>
+        </div>
+    </div>
 
-		<!-- Media sosial -->
-		<div class="box-link" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-		</div>
-	</div>
+    <div class="contact" id="contact">
+        <div class="contact-about">
+            <h1>Ariya Putra</h1>
+            <h6>Student</h6>
+            <p>Phone: +6289685660190</p>
+            <p>Email: madeariya28@gmail.com</p>
+            <div class="btn">
+                <a href="https://www.instagram.com/mdeariya_/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/i.m.putra.3576?mibextid=ZbWKwL"><i class="fa fa-facebook"></i></a>
+                <a href="mailto:madeariya28@gmail.com"><i class="fa fa-envelope-open"></i></a>
+            </div>
+        </div>
+        <div class="contact-form">
+            <form method="post" class="input">
+                <input id="username" class="username" type="text" name="username" placeholder="Enter your name"
+                    size="30" required>
+                <input id="password" class="username" type="text" name="password" placeholder="Enter your email"
+                    size="30" required>
+                <textarea name="" id="text" placeholder="Enter your message"></textarea>
 
-	<div id="about-me">
-		<h1>About me</h1>
-		<p>Nama saya I Made Ariya Putra saya lahir di Denpasar 21 Februari 2008, saya bersekolah di SMK Negeri 1
-			Denpasar dengan jurusan RPL alasan saya mengambil jurusan ini karena ingin belajar coding.</p>
-	</div>
+                <button type="submit" name="login">SUBMIT</button>
+            </form>
+        </div>
+    </div>
 
-	<div class="skill" data-aos="fade-right">
-		<div id="icon1">
-			<i class="fab fa-css3-alt"></i>
-		</div>
-
-		<div class="icon2">
-			<i class="fab fa-html5"></i>
-		</div>
-
-		<p id="pesan">Html & Css , saya sedang mempelajari dan membuat website menggunakan html & css</p>
-	</div>
-
-	<br>
-	<br>
-	<br>
-	<br>
-
-	<div class="sosmed" data-aos="fade-left">
-		<ul>
-			<li><a href="https://twitter.com/mdeariyaa?s=09"><i class="fab fa-twitter"></i></a></li>
-			<li><a href="https://instagram.com/mdeariya_"><i class="fab fa-instagram"></i></a></li>
-			<li><a href="mailto:madeariya28@gmail.com"><i class="fa fa-envelope"></i></a></li>
-		</ul>
-		<div id="notes">
-			<p>Bisa kontak saya dengan sosial media diatas</p>
-		</div>
-	</div>
-
-	<div id="project">
-		<h1>My Project</h1>
-		<img src="img/abc.jpg" alt="" data-aos="zoom-out-down">
-	</div>
-
-	<br><br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-
-	<footer>
-		<center>
-			<p>Created By <a href="https://github.com/MadeAriya" target="_blank">MadeAriya </a>© Copyright 2023.</p>
-		</center>
-	</footer>
-	<script>
-		// Efek Mengetik
-		var i = 0,
-			text;
-		text = "Hi! i'm Made Ariya";
-
-		function ketik() {
-			if (i < text.length) {
-				document.getElementById("name").innerHTML += text.charAt(i);
-				i++;
-				setTimeout(ketik, 120);
-			}
-		}
-		ketik();
-	</script>
-	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-	<script>
-		AOS.init();
-	</script>
-
+    <script src="https://kit.fontawesome.com/77395ff3a5.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
-
-<!-- Notes : <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
-
-CSS rules to specify families
-
-font-family: 'Fredoka One', cursive; -->
